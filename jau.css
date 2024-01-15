@@ -1,0 +1,24 @@
+ * {
+     text-align: center;
+     font-size: larger;
+ }
+
+ body {
+     font-size: 30px;
+     padding: 20px;
+     margin: auto;
+ }
+
+ head {
+     font-size: larger;
+ }
+
+ input {
+     font-size: 18px;
+     padding: 5px;
+ }
+
+ button {
+     letter-spacing: normal;
+     margin: 12px;
+ }

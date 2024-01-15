@@ -1,0 +1,29 @@
+/* body{
+    background-image: url("ticket1.jpeg");
+    float: right;
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+} */
+
+*{margin: 12px;
+ padding: px;
+}
+.center {
+    text-align: center;
+    border: 3px solid green;
+}
+
+input{
+    background-color: greenyellow;
+}
+*{font-size: large;}
+a{
+    text-decoration: none;
+    border: 2px rgb(15, 2, 0) solid;
+    background-color: greenyellow;
+    color: black;
+    font-size: larger;
+    padding-left: 5px;
+    padding-right: 5px;
+}

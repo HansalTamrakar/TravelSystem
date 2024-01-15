@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Information</title>
+  <link rel="stylesheet" href="information.css" />
+</head>
+<style>
+  * {
+    font-size: 20px;
+  }
+
+  button {
+    margin-left: 800px;
+
+  }
+</style>
+
+<body>
+
+  <h1>ORDER SUMMARY</h1>
+  <div>
+    <div class="col1">
+      <h2>Offers & Coupons</h2>
+      <br />
+      <span class="coupon">I have a Coupon code?</span>
+      <span class="Apply">APPLY</span>
+    </div>
+    <div class="col1">
+      <h1>Details</h1>
+      <div id="result" class="total">Name:<span id="input1"></div>
+      <div class="total">Gender:<span id="input2"></div>
+      <div class="total">Address:<span id="input3"></div>
+      <div class="total">Email:<span id="input4"></div>
+      <span class="total">Mobile Number:<span id="input5"> </span>
+        <div class="total">Card Number:<span id="input6"></div>
+        <div class="total">Date:<span id="input7"></div>
+    </div>
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const input1 = urlParams.get("input1");
+    const input2 = urlParams.get("input2");
+    const input3 = urlParams.get("input3");
+    const input4 = urlParams.get("input4");
+    const input5 = urlParams.get("input5");
+    const input6 = urlParams.get("input6");
+    const input7 = urlParams.get("input7");
+    document.getElementById("input1").textContent = input1;
+    document.getElementById("input2").textContent = input2;
+    document.getElementById("input3").textContent = input3;
+    document.getElementById("input4").textContent = input4;
+    document.getElementById("input5").textContent = input5;
+    document.getElementById("input6").textContent = input6;
+    document.getElementById("input7").textContent = input7;
+  </script>
+  <button onclick="myFunction()">PAY NOW</button>
+
+  <script>
+    function myFunction() {
+      location.replace("prac.html")
+    }
+  </script>
+
+</body>
+
+</html>

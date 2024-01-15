@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Passenger Details</title>
+    <link rel="stylesheet" href="payment1.css" />
+    <script src="payment1.js"></script>
+  </head>
+
+  <body>
+    <div class="center">
+      <p>PAYMENT FORM</p>
+    </div>
+    <img src="ticket1.jpeg" height="100" />
+    <form>
+      <fieldset>
+        <legend>Passenger Details</legend>
+        <p>
+          First name: <input type="text" name="Name" id="input1" required />
+        </p>
+
+        <p>
+          Male:<input
+            type="radio"
+            name="Gender"
+            value="Male"
+            id="input2"
+            required
+          />
+          Female:<input type="radio" name="Gender" value="Female" id="female" />
+        </p>
+
+        <p>
+          Address: <input type="text" name="Address" id="input3" required />
+        </p>
+
+        <p>Email: <input type="email" name="Email" id="input4" required /></p>
+
+        <p>
+          Phone Number: <input type="text" name="phone" id="input5" required />
+        </p>
+        <script></script>
+
+        <select required>
+          <option value="">----select a user type----</option>
+          <option value="visa ">visa</option>
+          <option value="Rupay">Rupay</option>
+          <option value="paytm">paytm</option>
+          <option value="Bharatpe">Bharatpe</option>
+        </select>
+        <p>Card number<input type="number" id="input6" required /></p>
+        <p>Date<input type="date" id="input7" required /></p>
+        <button type="button" onclick="submitForm()">Submit</button>
+      </fieldset>
+      <script>
+        /*
+        function submitForm() {
+          const name = document.getElementById("name").value;
+          const male = document.getElementById("male").value;
+          const female = document.getElementById("female").value;
+          const Address = document.getElementById("Address").value;
+          const email = document.getElementById("email").value;
+          const date = document.getElementById("date").value;
+
+          const url = `display1.html?name=${encodeURIComponent(
+            name
+          )}&input2=${encodeURIComponent(male)}&input3=${encodeURIComponent(
+            female
+          )}&input3=${encodeURIComponent(Address)}&input3=${encodeURIComponent(
+            email
+          )}&input3=${encodeURIComponent(date)}`;
+          window.location.href = url;
+        }*/
+      </script>
+      <script>
+        function submitForm() {
+          const input1 = document.getElementById("input1").value;
+          const input2 = document.getElementById("input2").value;
+          const input3 = document.getElementById("input3").value;
+          const input4 = document.getElementById("input4").value;
+          const input5 = document.getElementById("input5").value;
+          const input6 = document.getElementById("input6").value;
+          const input7 = document.getElementById("input7").value;
+          const url = `display.html?input1=${encodeURIComponent(
+            input1
+          )}&input2=${encodeURIComponent(input2)}&input3=${encodeURIComponent(
+            input3
+          )}&input4=${encodeURIComponent(input4)}&input5=${encodeURIComponent(
+            input5
+          )}&input6=${encodeURIComponent(input6)}&input7=${encodeURIComponent(
+            input7
+          )}`;
+          window.location.href = url;
+        }
+      </script>
+    </form>
+  </body>
+</html>

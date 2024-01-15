@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:;
+    padding:12px;
+}
+h1{
+    text-align:left;
+    
+}
+
+.col1{
+    margin: 1% 35%;
+    background-color: whitesmoke;
+}
+.coupon{
+    text-align: left;
+    font-size: large;
+}
+.Apply{
+    text-align: right;
+    color: blue;
+    padding: 80px;
+}
+input{
+    margin: 6% 35%;
+}

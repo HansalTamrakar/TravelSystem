@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information</title>
+    <link rel="stylesheet" href="information.css" />
+  </head>
+
+  <body>
+    <script>
+      localStorage.setItem("textvalue", firstname);
+      document.getElementById("result").innerHTML =
+        localStorage.getItem("textvalue");
+    </script>
+    <h1>ORDER SUMMARY</h1>
+    <div>
+      <div class="col1">
+        <h2>Offers & Coupons</h2>
+        <br />
+        <span class="coupon">I have a Coupon code?</span>
+        <span class="Apply">APPLY</span>
+      </div>
+      <div class="col1">
+        <h1>Details</h1>
+        <div id="result" class="total">Name:</div>
+        <div class="total">Gender:</div>
+        <div class="total">Address:</div>
+        <div class="total">Phone Number:</div>
+        <span class="total">Date </span>
+        <div class="total">Card type</div>
+      </div>
+    </div>
+    <style>
+      button {
+        margin-left: 800px;
+      }
+    </style>
+
+    <button onclick="redirectToPage()">Pay Now</button>
+    <script>
+      function redirectToPage() {
+        window.location.href = "prac.html";
+      }
+    </script>
+  </body>
+</html>
